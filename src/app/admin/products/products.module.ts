@@ -8,10 +8,10 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
 import { InputFileModule } from 'ngx-input-file';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductZoomComponent } from './product-detail/product-zoom/product-zoom.component';
+import { ZoomComponent } from './product-detail/product-zoom/zoom.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { CategoryDialogComponent } from './categories/category-dialog/category-dialog.component';
+import { DialogComponent } from './categories/category-dialog/dialog.component';
 
 export const routes = [ 
   { path: '', redirectTo: 'product-list', pathMatch: 'full'},
@@ -27,10 +27,10 @@ export const routes = [
   declarations: [
     ProductListComponent,
     ProductDetailComponent,
-    ProductZoomComponent,
+    ZoomComponent,
     AddProductComponent,
     CategoriesComponent,
-    CategoryDialogComponent
+    DialogComponent
   ],
   imports: [
     CommonModule,

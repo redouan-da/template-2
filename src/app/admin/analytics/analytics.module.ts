@@ -7,7 +7,7 @@ import { AnalyticsComponent } from './analytics.component';
 import { MontlySalesComponent } from './montly-sales/montly-sales.component';
 import { SalesSummaryComponent } from './sales-summary/sales-summary.component';
 import { DailyViewsStatsComponent } from './daily-views-stats/daily-views-stats.component';
-import { MostViewedProductsComponent } from './most-viewed-products/most-viewed-products.component';
+import { MostComponent } from './most-viewed-products/most.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { RefundsComponent } from './refunds/refunds.component';
 
@@ -21,7 +21,7 @@ export const routes = [
     MontlySalesComponent,
     SalesSummaryComponent,
     DailyViewsStatsComponent,
-    MostViewedProductsComponent,
+    MostComponent,
     TransactionsComponent,
     RefundsComponent
   ],

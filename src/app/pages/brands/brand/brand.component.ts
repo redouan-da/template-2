@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { ProductDialogComponent } from '../../../shared/products-carousel/product-dialog/product-dialog.component';
+import { DialogpComponent } from '../../../shared/products-carousel/product-dialog/dialogp.component';
 import { AppService } from '../../../app.service';
 import { Product, Category } from "../../../app.models";
 import { Settings, AppSettings } from 'src/app/app.settings';
@@ -104,7 +104,7 @@ export class BrandComponent implements OnInit {
   }
 
   public openProductDialog(product){   
-    let dialogRef = this.dialog.open(ProductDialogComponent, {
+    let dialogRef = this.dialog.open(DialogpComponent, {
         data: product,
         panelClass: 'product-dialog',
         direction: (this.settings.rtl) ? 'rtl' : 'ltr'

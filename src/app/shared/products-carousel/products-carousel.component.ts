@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { DecimalPipe } from '@angular/common';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { MatDialog } from '@angular/material/dialog';
-import { ProductDialogComponent } from './product-dialog/product-dialog.component';
+import { DialogpComponent } from './product-dialog/dialogp.component';
 import { Data, AppService } from '../../app.service';
 import { Product } from "../../app.models";
 import { Settings, AppSettings } from 'src/app/app.settings';
@@ -57,7 +57,7 @@ export class ProductsCarouselComponent implements OnInit {
   }
 
   public openProductDialog(product){   
-    let dialogRef = this.dialog.open(ProductDialogComponent, {
+    let dialogRef = this.dialog.open(DialogpComponent, {
         data: product,
         panelClass: 'product-dialog',
         direction: (this.settings.rtl) ? 'rtl' : 'ltr'

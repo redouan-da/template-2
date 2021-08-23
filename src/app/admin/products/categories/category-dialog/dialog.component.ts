@@ -4,12 +4,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-category-dialog',
-  templateUrl: './category-dialog.component.html',
-  styleUrls: ['./category-dialog.component.scss']
+  templateUrl: './dialog.component.html',
+  styleUrls: ['./dialog.component.scss']
 })
-export class CategoryDialogComponent implements OnInit {
+export class DialogComponent implements OnInit {
   public form: FormGroup;
-  constructor(public dialogRef: MatDialogRef<CategoryDialogComponent>, 
+  constructor(public dialogRef: MatDialogRef<DialogComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any,
               public fb: FormBuilder) { }
 

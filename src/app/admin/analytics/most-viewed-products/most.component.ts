@@ -3,10 +3,10 @@ import { most_viewed_products } from '../analytics.data';
 
 @Component({
   selector: 'app-most-viewed-products',
-  templateUrl: './most-viewed-products.component.html',
-  styleUrls: ['./most-viewed-products.component.scss']
+  templateUrl: './most.component.html',
+  styleUrls: ['./most.component.scss']
 })
-export class MostViewedProductsComponent implements OnInit {
+export class MostComponent implements OnInit {
   public data: any[]; 
   public showLegend = false;
   public gradient = true;

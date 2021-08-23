@@ -6,14 +6,14 @@ import { Product } from '../../../app.models';
 
 @Component({
   selector: 'app-product-dialog',
-  templateUrl: './product-dialog.component.html',
-  styleUrls: ['./product-dialog.component.scss'],
+  templateUrl: './dialogp.component.html',
+  styleUrls: ['./dialogp.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ProductDialogComponent implements OnInit {
+export class DialogpComponent implements OnInit {
   public config: SwiperConfigInterface = {};
   constructor(public appService:AppService, 
-              public dialogRef: MatDialogRef<ProductDialogComponent>,
+              public dialogRef: MatDialogRef<DialogpComponent>,
               @Inject(MAT_DIALOG_DATA) public product: Product) { }
 
   ngOnInit() { }

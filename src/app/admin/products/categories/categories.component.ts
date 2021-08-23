@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/app.models';
 import { AppService } from 'src/app/app.service';
-import { CategoryDialogComponent } from './category-dialog/category-dialog.component';
+import { DialogComponent } from './category-dialog/dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from 'src/app/shared/confirm-dialog/confirm-dialog.component';
 import { AppSettings, Settings } from 'src/app/app.settings';
@@ -37,7 +37,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   public openCategoryDialog(data:any){
-    const dialogRef = this.dialog.open(CategoryDialogComponent, {
+    const dialogRef = this.dialog.open(DialogComponent, {
       data: {
         category: data,
         categories: this.categories

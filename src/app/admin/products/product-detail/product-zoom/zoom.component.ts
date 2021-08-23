@@ -3,15 +3,15 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-product-zoom',
-  templateUrl: './product-zoom.component.html',
-  styleUrls: ['./product-zoom.component.scss'],
+  templateUrl: './zoom.component.html',
+  styleUrls: ['./zoom.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ProductZoomComponent implements OnInit {
+export class ZoomComponent implements OnInit {
   
   @ViewChild('zoomImage', { static: true }) zoomImage;
 
-  constructor(public dialogRef: MatDialogRef<ProductZoomComponent>,
+  constructor(public dialogRef: MatDialogRef<ZoomComponent>,
               @Inject(MAT_DIALOG_DATA) public image:any) { }
 
   ngOnInit() { }
